@@ -13,8 +13,8 @@ public class Sample2_20 {
 			String str1 = br1.readLine();
 			test[i] = Integer.parseInt(str1);
 		}
-		for(int i=0;i<5;i++) {
-			for(int j=0;j<4;j++) {
+		for(int i=0;i<(test.length-1);i++) {
+			for(int j=0;j<(test.length-i-1);j++) {
 				if(test[j]<test[j+1]) {
 					int num = test[j];
 					test[j] = test[j+1];
